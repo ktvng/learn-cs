@@ -8,7 +8,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Unit 1', link: '/unit_1' }
+      { text: 'Unit 1', link: '/unit_1/index' }
     ],
 
     sidebar: [
