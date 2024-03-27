@@ -3,7 +3,7 @@ In the first lesson, we saw how we could print text using Python! Now, let us ex
 
 Go to the Python editor and copy the following line:
 
-```
+```py
 print(9+10)
 ```
 
@@ -15,7 +15,7 @@ Now, run the program and see what the output is. Does it match what you would ex
 
 Now that we've covered that addition can be evaluated, what other operations do you think can be used in python?
 
-```
+```py
 +
 -
 *

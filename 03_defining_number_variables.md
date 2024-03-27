@@ -4,7 +4,7 @@ In the previous lesson, we covered some basic math operations and how we can use
 
 To begin this lesson, paste the following 2 lines of code into the Python editor: 
 
-``` 
+```py
 my_number = 24
 print(my_number)
 ```
@@ -20,7 +20,7 @@ There are 2 important details to note about a variable:
 2. its value, which in this case will be a number
 
 Here's another example of how we can use a variable to store a number
-```
+```py
 sum = 5 + 6
 print(sum)
 ```
@@ -28,7 +28,7 @@ print(sum)
 As you might expect, this program will print out `11` to the screen when run.
 
 Lastly, we can use operations on variables as if they were the numbers themselves:
-```
+```py
 sum = 11
 print(sum + 2)
 ```

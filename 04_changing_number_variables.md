@@ -4,7 +4,7 @@ In the previous lesson, we covered how to define a variable and use it throughou
 
 To begin this lesson, paste the following 2 lines of code into the Python editor: 
 
-``` 
+```py
 my_number = 24
 my_number = 25
 print(my_number)
@@ -15,7 +15,7 @@ What do you think will get printed here? __________
 While we initially set `my_number` to be 24, we updated it before we printed it to be 25.
 
 What if we wanted to add 3 to an existing variable, would the following program do this?
-```
+```py
 count = 0
 count + 3
 print(count)
@@ -28,7 +28,7 @@ What do you think will get printed here? __________
 While you might expected 3 to get printed here, we never actually updated the value of `count` 
 
 This is the way you would have to update the count:
-```
+```py
 count = 0
 count = count + 3
 print(count)
