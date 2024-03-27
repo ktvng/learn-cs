@@ -2,7 +2,7 @@
 
 > **Program**: A program is a set of instructions written by humans to tell a computer to do an action.
 
-Let's get started by creating the most simple of Python program!
+Let's get started by creating the most simple of Python programs!
 
 Go ahead and copy the following line into the Python editor:
 
