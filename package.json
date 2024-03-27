@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev python-esl",
+    "docs:build": "vitepress build python-esl",
+    "docs:preview": "vitepress preview python-esl"
+  }
+}
