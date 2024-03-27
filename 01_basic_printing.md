@@ -10,7 +10,7 @@ Go ahead and copy the following line into the Python editor:
 print('Hello World!')
 ```
 
-And then go ahead and run the program. You should see `Hello World!` printed to the screen. Congratulations, you've built and run you first Python program!
+And then go ahead and run the program. You should see `Hello World!` printed to the screen. Congratulations, you've built and run your very first Python program!
 
 You might also notice that there are quotes surrounding `Hello World` in program. These are needed around text we are printing in the program, but the quotes themselves aren't printed to the screen. Let's try another example:
 
