@@ -6,19 +6,25 @@ Let's get started by creating the most simple of Python program!
 
 Go ahead and copy the following line into the Python editor:
 
-`print('Hello World!')`
+```
+print('Hello World!')
+```
 
 And then go ahead and run the program. You should see `Hello World!` printed to the screen. Congratulations, you've built and run you first Python program!
 
 You might also notice that there are quotes surrounding `Hello World` in program. These are needed around text we are printing in the program, but the quotes themselves aren't printed to the screen. Let's try another example:
 
-`print('Hello friends')`
+```
+print('Hello friends')
+```
 
 ---
 
 We can expand further to see what else Python is capable of printing by copying the following line:
 
-`print(2)`
+```
+print(2)
+```
 
 And viola, we can print numbers to the screen as well.
 
