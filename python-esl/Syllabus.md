@@ -14,9 +14,8 @@ proficiency in English in a shorter time frame envisioned by Kevin Tang and Andr
 4. Lesson 1.: Variables -- numbers specifically
 5. Lesson 1.: Equality with numbers ** Kevin, I think we should bring this up in conditionals not here **
 6. Lesson 1.: Strings (& variables)
-7. Lesson 1.: String operations (concat)
-8. Lesson 1.: Types (casting, 4 != "4")
-9. Lesson 1.:
+7. Lesson 1.: Types (casting, 4 != "4")
+8. Lesson 1.:
 
 
 ## Unit 2: User Interaction
