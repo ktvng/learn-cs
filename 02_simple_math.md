@@ -33,8 +33,11 @@ Exercise: Simplify the expression: `17*345+6543/3+77-2+89` ____________________
 
 ---
 
-Follow up exercises:
+## Follow up exercises ##
 1. calculate `17*23` _________
 2. calculate `8-3*0` _________
-3. calculate `14+24` _________
-4. calculate `23/0`  _________
+3. calculate `14+24+14+14+4` _________
+
+
+## Questions ##
+1. what happens if you try `print(23/0)`? Try it and see what happens.
