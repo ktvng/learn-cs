@@ -3,12 +3,12 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Learning Python",
-  description: "A Python curriculum aimed at introducing begineers to programming concepts",
+  description: "A Python curriculum aimed at introducing beginners to programming concepts",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Unit 1', link: '/unit_1/index' }
+      { text: 'Unit 1', link: '/python-esl/unit_1/index' }
     ],
 
     sidebar: [
@@ -17,7 +17,7 @@ export default defineConfig({
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' },
-          { text: 'Getting Started!!', link: '/unit_1/index' }
+          { text: 'Getting Started!!', link: '/python-esl/unit_1/index' }
         ]
       }
     ],
