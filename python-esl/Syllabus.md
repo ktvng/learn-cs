@@ -1,7 +1,7 @@
 # Syllabus
 
 Introduction to Computer Science taught in Python, geared towards an ELL or ESL audience with weaker
-proficiency in English in a shorter time frame
+proficiency in English in a shorter time frame envisioned by Kevin Tang and Andrew Whiteman
 
 # Units:
 
