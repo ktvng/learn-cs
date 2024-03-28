@@ -41,3 +41,6 @@ Exercise: Simplify the expression: `17*345+6543/3+77-2+89` ____________________
 
 ## Questions ##
 1. what happens if you try `print(23/0)`? Try it and see what happens.
+
+## Recap ##
+1. Python can be used as a standard calculator to simplify math equations

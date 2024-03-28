@@ -39,6 +39,10 @@ where we set the `count` equal to the previous value of `count` plus `3`
 
 ---
 
-Exercises:
-1. set a variable equal to 33 and update it to be 22. print the results
+## Exercises ##
+1. set a variable equal to 33 initially and update it to be 22. print the results
 2. set a variable equal to your age and then update the variable to be 2 lower than your age. print the results
+
+## Recap ##
+1. variables can be updated with new values throughout the program
+2. to update variables based on the current value of the variable, `x = x + <number>` 
