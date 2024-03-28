@@ -1,0 +1,4 @@
+node_modules/*
+
+python-esl/.vitepress/dist
+python-esl/.vitepress/cache
