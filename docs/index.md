@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Learning Python"
-  text: "A Python curriculum aimed at introducing begineers to programming concepts"
-  tagline: My great project tagline
+  name: "Learning CS"
+  text: "A Computer Science curriculum aimed to teach beginners the fundamentals of coding"
+  tagline: Everyone can learn CS!
   actions:
     - theme: brand
       text: Unit 1
@@ -22,4 +22,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-

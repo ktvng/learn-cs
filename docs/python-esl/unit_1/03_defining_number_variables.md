@@ -1,23 +1,40 @@
-## Variables -- defining number variables ##
+<script setup>
+import InputBox from '/components/InputBox.vue'
+</script>
 
-In the previous lesson, we covered some basic math operations and how we can use Python to do the hard calculations for us so we don't have to do them by hand.
+# Names and Variables #
 
-To begin this lesson, paste the following 2 lines of code into the Python editor: 
+In the previous lesson, we learned about basic math operations and how Python can help perform calculations.
+
+In this lesson, we will learn more about how we can use variables to refer to objects.
+
+::: info DEFINITION
+Variable: A variable is a name which is used to refer to a value. A variable can refer to a number, a string of text, or an object.
+:::
+
+## Warm up ##
+
+To begin this lesson, paste the following 2 lines of code into the Python editor:
 
 ```py
 my_number = 24
 print(my_number)
 ```
 
-What do you think will get printed here? __________
+What do you think will get printed here?
+
+<InputBox name="u1-l3-q1" answer="24" />
+
+---
 
 As you might have guessed, 24 will be printed here because we assigned `my_number` the value of `24`.
 
-> **Variable**: a variable allows humans to interact with numbers using a human readable name. Note that quotes are not needed around the variable name `my_number`
+---
 
-There are 2 important details to note about a variable:
-1. its name, which is how we as programmers will interact with the variable
-2. its value, which in this case will be a number
+
+There are 2 important details to know about a variable.
+1. Its name, which is how we as programmers will interact with the variable
+2. Its value, which in this case will be a number
 
 Here's another example of how we can use a variable to store a number
 ```py
@@ -41,5 +58,5 @@ And this should print 13 as expected!
 2. print a variable named `zero` that equals `0`
 
 ## Recap ##
-1. We can use variables with human readable names to store, access numbers. 
+1. We can use variables with human readable names to store, access numbers.
 2. These variables can be used in place of numbers in math expressions and equations
