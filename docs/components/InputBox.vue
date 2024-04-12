@@ -2,10 +2,10 @@
 const props = defineProps(['answer', 'name'])
 
 function storeChange() {
-  localStorage.setItem(props.name, document.querySelector("#" + props.name).value)
+  // localStorage.setItem(props.name, document.querySelector("#" + props.name).value)
 }
 
-let lastResponse = localStorage.getItem(props.name) ?? ""
+// let lastResponse = localStorage.getItem(props.name) ?? ""
 </script>
 <template>
   <div>
@@ -17,7 +17,7 @@ let lastResponse = localStorage.getItem(props.name) ?? ""
         border-width: .11em; border-color: #5468ff; border-style: solid; width: 32em;
         font-size: 14px; font-family: var(--vp-font-family-base);"
       @change="storeChange"
-      placeholder="Your answer: "></input>
+      placeholder="Your answer: " />
   </div>
 </template>
 <script>
