@@ -9,6 +9,15 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ["pyodide"]
     },
+    worker: {
+      format: 'es'
+    },
+    build: {
+      target: 'esnext',
+      rollupOptions: {
+        plugins: [pyodide()]
+      }
+    },
     // For an unknown reason, adding the headers here in the vite config does not
     // extend to the HTML files
     server: {
@@ -70,3 +79,24 @@ export default defineConfig({
     ]
   },
 })
+
+import { copyFile, mkdir } from 'fs/promises'
+
+// https://pyodide.org/en/latest/usage/working-with-bundlers.html#vite
+function pyodide() {
+  return {
+    name: 'pyodide',
+    generateBundle: async () => {
+      await mkdir('dist/assets', { recursive: true })
+      const files = [
+        'pyodide-lock.json',
+        'pyodide.asm.js',
+        'pyodide.asm.wasm',
+        'python_stdlib.zip'
+      ]
+      for (const file of files) {
+        await copyFile(`node_modules/pyodide/${file}`, `dist/assets/${file}`)
+      }
+    }
+  }
+}
