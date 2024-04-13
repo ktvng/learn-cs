@@ -4,7 +4,6 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Learning Python",
   description: "A Python curriculum aimed at introducing beginners to programming concepts",
-  base: "/learn-cs/",
   vite: {
     optimizeDeps: {
       exclude: ["pyodide"]
