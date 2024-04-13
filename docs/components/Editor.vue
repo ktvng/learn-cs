@@ -1,25 +1,38 @@
 <script lang="ts">
-const ready = ref(false)
-const inputBuffer = new SharedArrayBuffer(1024)
-const inputData = new Uint8Array(inputBuffer)
-const waitBuffer = new SharedArrayBuffer(4)
-const waitFlag = new Int32Array(waitBuffer)
-const encoder = new TextEncoder()
-
-const worker = new Worker(new URL('./worker.js', import.meta.url), {
-  type: 'module'
-})
-
-worker.addEventListener('message', () => {
-  ready.value = true
-  worker.postMessage({ inputBuffer, waitBuffer })
-}, { once: true })
+  const init = ref(false)
 </script>
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { EditorView, basicSetup } from 'codemirror'
 import { pythonLanguage } from '@codemirror/lang-python';
+
+const ready = ref(false)
+let inputBuffer: SharedArrayBuffer | null = null;
+let inputData: Uint8Array | null = null;
+let waitBuffer: SharedArrayBuffer | null = null;
+let waitFlag: Int32Array | null = null;
+let encoder: TextEncoder | null = null;
+let worker: Worker | null = null;
+
+if (!init.value) {
+  inputBuffer = new SharedArrayBuffer(1024)
+  inputData = new Uint8Array(inputBuffer)
+  waitBuffer = new SharedArrayBuffer(4)
+  waitFlag = new Int32Array(waitBuffer)
+  encoder = new TextEncoder()
+
+  worker = new Worker(new URL('./worker.js', import.meta.url), {
+    type: 'module'
+  })
+
+  worker?.addEventListener('message', () => {
+    ready.value = true
+    worker?.postMessage({ inputBuffer, waitBuffer })
+  }, { once: true })
+
+  init.value = true
+}
 
 const props = defineProps<{ code: string }>()
 
@@ -44,7 +57,7 @@ const output = ref('')
 const running = ref(false)
 const just_saved = ref(false)
 
-worker.addEventListener('message', async (e) => {
+worker?.addEventListener('message', async (e) => {
   if (e.data.id !== id) return
 
   if (e.data.input) {
