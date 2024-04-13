@@ -1,3 +1,5 @@
+import math
+
 print('Hello, World!')
 
 print(3**2)
@@ -27,3 +29,10 @@ print(count)
 count = 0
 count = count + 3
 print(count)
+
+my_number = math.fabs(-4)
+print(my_number)
+
+
+my_number = math.pi
+print(my_number)
