@@ -104,10 +104,10 @@ async function save() {
 
 <template>
   <div style="padding-top: 1em; padding-bottom: 1em;">
-    <button data-v-2dba8ca9="" class="VPButton medium alt" @click="save" style="margin-right: .5em;">
+    <button data-v-2dba8ca9="" data-v-cad61b99="" class="VPButton medium alt" @click="save" style="margin-right: .5em;">
       {{ just_saved ? 'Saved!' : 'Save' }}
     </button>
-    <button data-v-2dba8ca9="" class="VPButton medium brand" @click="run" :disabled="running || !ready">
+    <button data-v-2dba8ca9="" data-v-cad61b99="" class="VPButton medium brand" @click="run" :disabled="running || !ready">
       {{ ready ? (running ? 'Running...' : 'Run') : 'Loading Python...' }}
     </button>
   </div>
