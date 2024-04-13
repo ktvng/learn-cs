@@ -5,10 +5,42 @@ export default defineConfig({
   title: "Learning Python",
   description: "A Python curriculum aimed at introducing beginners to programming concepts",
   base: "/learn-cs/",
+  vite: {
+    optimizeDeps: {
+      exclude: ["pyodide"]
+    },
+    // For an unknown reason, adding the headers here in the vite config does not
+    // extend to the HTML files
+    server: {
+      headers: {
+        "Cross-Origin-Embedder-Policy": "require-corp",
+        "Cross-Origin-Opener-Policy": "same-origin"
+      }
+    },
+    preview: {
+      headers: {
+        "Cross-Origin-Embedder-Policy": "require-corp",
+        "Cross-Origin-Opener-Policy": "same-origin"
+      }
+    },
+    plugins: [
+      {
+        name: "configure-response-headers",
+        configureServer: (server) => {
+          server.middlewares.use((_req, res, next) => {
+            res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
+            res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+            next();
+          });
+        },
+      },
+    ],
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Editor', link: '/python-editor'},
       { text: 'Unit 1', link: '/python-esl/unit_1/index' }
     ],
 
@@ -36,5 +68,5 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
-  }
+  },
 })
