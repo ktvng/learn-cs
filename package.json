@@ -1,8 +1,9 @@
 {
   "scripts": {
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:build": "vitepress build docs && node repack.mjs",
+    "docs:preview": "vitepress preview docs",
+    "repack": "node repack.mjs"
   },
   "devDependencies": {
     "vitepress": "^1.0.1",
