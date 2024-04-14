@@ -1,5 +1,7 @@
 <script lang="ts">
   const init = ref(false)
+  const ready = ref(false)
+  let worker: any
 </script>
 
 <script setup lang="ts">
@@ -7,15 +9,14 @@ import { onMounted, ref } from 'vue'
 import { EditorView, basicSetup } from 'codemirror'
 import { pythonLanguage } from '@codemirror/lang-python';
 
-const ready = ref(false)
 let inputBuffer: SharedArrayBuffer | null = null;
 let inputData: Uint8Array | null = null;
 let waitBuffer: SharedArrayBuffer | null = null;
 let waitFlag: Int32Array | null = null;
 let encoder: TextEncoder | null = null;
-let worker: Worker | null = null;
 
 if (!init.value) {
+  console.log("init")
   inputBuffer = new SharedArrayBuffer(1024)
   inputData = new Uint8Array(inputBuffer)
   waitBuffer = new SharedArrayBuffer(4)
@@ -41,8 +42,6 @@ let editor: EditorView | null = null
 
 onMounted(() => {
   let code = localStorage.getItem("last-editor-item") ?? props.code ?? ""
-  console.log(code)
-  console.log(code.match(/\n/g) ?? [])
   let line_count = (code.match(/\n/g) ?? []).length
   code += (line_count < 9) ? "\n".repeat(9-line_count) : ""
   editor = new EditorView({
