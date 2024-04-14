@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Learning Python",
-  description: "A Python curriculum aimed at introducing beginners to programming concepts",
+  title: "Learn CS",
+  description: "A simple, straightforward presentation of computer science, fit for everyone.",
   vite: {
     optimizeDeps: {
       exclude: ["pyodide"]
@@ -74,7 +74,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/ktvng/learn-cs' }
     ]
   },
 })
