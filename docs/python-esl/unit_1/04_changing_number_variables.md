@@ -10,7 +10,10 @@ my_number = 25
 print(my_number)
 ```
 
-What do you think will get printed here? __________
+What do you think will get printed here? 
+
+<InputBox name="u1-l4-q1" answer="??" />
+
 
 While we initially set `my_number` to be 24, we updated it before we printed it to be 25.
 
@@ -21,7 +24,10 @@ count + 3
 print(count)
 ```
 
-What do you think will get printed here? __________
+What do you think will get printed here? 
+
+<InputBox name="u4-l1-q2" answer="??" />
+
 
 ---
 

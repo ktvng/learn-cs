@@ -11,7 +11,10 @@ my_variable = math.pi
 print(my_variable)
 ```
 
-What is printed after running the program? _____________
+What is printed after running the program? 
+
+<InputBox name="u7-l1-q1" answer="??" />
+
 
 Let's break down what we're doing here, in the first line of code, we are importing what is known as a library. In this example, it's the `math` library
 
@@ -30,7 +33,10 @@ my_number = math.fabs(-4)
 print(my_number)
 ```
 
-What do you think gets printed here after running the program? __________
+What do you think gets printed here after running the program? 
+
+<InputBox name="u7-l1-q2" answer="??" />
+
 
 ::: info DEFINITION
 **Function**: A programming function is similar to a mathematical function where it takes in 0 or more arguments separated by commas and has the ability to return a simplified value as the result. All functions are identifiable with the `(` `)` around any arguments and, if there is more than 1 argument, all following values will be separated by commas.
@@ -40,15 +46,15 @@ Lets understand whats happening on the second line of code: `my_number = math.fa
 
 Some functions return a value after the code runs, and we can store that returned value in the variable `my_number`, similar to how we have created variables in the past
 
-The `math.fabs()` function takes in a single argument, and returns the absolute value of the number we give it. The result of this library function can be stored and printed in a variable like we have been doing in past lessons. We can identify `math.fabs(-4)` as a function because of the `(` `)`.  
+The `math.fabs()` function takes in a single argument (`-4` in the example), and returns the absolute value of the number we give it. The result of this library function can be stored and printed in a variable like we have been doing in past lessons. And we can identify `math.fabs(-4)` as a function because of the `(` `)`.  
 
 ---
 
 ## Exercises ##
 1. set a variable equal to 144 and find the square root using the `math.sqrt()` function. print the results
-2. set a variable equal to your age and then raise it to the 5th power using the `math.pow()` function. print the results
+2. find the 5th power of 2 using `math.pow(2, 5)` function. print the results
 3. print out `math.e` and record the value of `e`
 
 ## Recap ##
 1. Variables and functions can be imported as libraries and leveraged to create your own programs
-2. Functions come in many forms, but all 
+2. Functions come in many forms, but all can be recognized with `(` `)`

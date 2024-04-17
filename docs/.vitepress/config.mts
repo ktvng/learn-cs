@@ -20,7 +20,9 @@ export default defineConfig({
           { text: 'First Steps', link: '/python-esl/unit_1/01_basic_printing' },
           { text: 'Simple Math', link: '/python-esl/unit_1/02_simple_math' },
           { text: 'Names and Variables', link: '/python-esl/unit_1/03_defining_number_variables' },
+          { text: 'Updating Variables', link: '/python-esl/unit_1/04_changing_number_variables' },
           { text: 'Equality', link: '/python-esl/unit_1/04_equality' },
+          { text: 'Importing Libraries', link: '/python-esl/unit_1/07_importing_libraries' },
         ]
       },
       // {
