@@ -1,4 +1,4 @@
-## Equality ##
+# Equality #
 
 ### Learning Objective ###
 1. If two things are equal, the order we

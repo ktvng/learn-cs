@@ -1,8 +1,8 @@
-## Variables -- changing number variables ##
+# Variables -- changing number variables #
 
 In the previous lesson, we covered how to define a variable and use it throughout the program. Now we will show you that you can update variables and how to do it.
 
-To begin this lesson, paste the following 2 lines of code into the Python editor: 
+To begin this lesson, paste the following 2 lines of code into the Python editor:
 
 ```py
 my_number = 24
@@ -31,7 +31,7 @@ What do you think will get printed here?
 
 ---
 
-While you might expected 3 to get printed here, we never actually updated the value of `count` 
+While you might expected 3 to get printed here, we never actually updated the value of `count`
 
 This is the way you would have to update the count:
 ```py
@@ -51,4 +51,4 @@ where we set the `count` equal to the previous value of `count` plus `3`
 
 ## Recap ##
 1. variables can be updated with new values throughout the program
-2. to update variables based on the current value of the variable, `x = x + <number>` 
+2. to update variables based on the current value of the variable, `x = x + <number>`

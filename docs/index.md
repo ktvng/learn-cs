@@ -3,22 +3,19 @@
 layout: home
 
 hero:
-  name: "Learning CS"
-  text: "A Computer Science curriculum aimed to teach beginners the fundamentals of coding"
-  tagline: Everyone can learn CS!
+  name: Learn CS
+  text: Computer Science made simple.
+  tagline: Teach yourself CS through a simple, straightforward lesson plan.
   actions:
     - theme: brand
       text: Unit 1
       link: /python-esl/unit_1/index
-    - theme: alt
-      text: API Examples
-      link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: ELL Focused
+    details: Designed with simple english and piecemeal presentation, Learn CS provides ELL friendly curriculum.
+  - title: Hands On Learning
+    details: We believe that the best way to learn is to experiment. Run code yourself in the in-browser Python editor.
+  - title: Community Curated.
+    details: All our curriculum is open source, community curated, and always free to use. Have a suggestion? Visit us on GitHub.
 ---
