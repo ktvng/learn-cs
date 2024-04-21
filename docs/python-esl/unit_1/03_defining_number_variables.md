@@ -56,6 +56,7 @@ And this should print 13 as expected!
 ## Exercises ##
 1. create a variable named `age` and set it equal to your age, and print that value + 2 to the screen
 2. print a variable named `zero` that equals `0`
+Submit here: https://forms.gle/vryURyEUuCXra9jw6
 
 ## Recap ##
 1. We can use variables with human readable names to store, access numbers.
