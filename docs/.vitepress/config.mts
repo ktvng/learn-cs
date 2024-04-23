@@ -1,48 +1,12 @@
 import { defineConfig } from 'vitepress'
+import { vitepressPythonEditor } from 'vitepress-python-editor/vite-plugin'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Learn CS",
   description: "A simple, straightforward presentation of computer science, fit for everyone.",
   vite: {
-    optimizeDeps: {
-      exclude: ["pyodide"]
-    },
-    worker: {
-      format: 'es'
-    },
-    build: {
-      target: 'esnext',
-      rollupOptions: {
-        plugins: [pyodide()]
-      }
-    },
-    // For an unknown reason, adding the headers here in the vite config does not
-    // extend to the HTML files
-    server: {
-      headers: {
-        "Cross-Origin-Embedder-Policy": "require-corp",
-        "Cross-Origin-Opener-Policy": "same-origin"
-      }
-    },
-    preview: {
-      headers: {
-        "Cross-Origin-Embedder-Policy": "require-corp",
-        "Cross-Origin-Opener-Policy": "same-origin"
-      }
-    },
-    plugins: [
-      {
-        name: "configure-response-headers",
-        configureServer: (server) => {
-          server.middlewares.use((_req, res, next) => {
-            res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
-            res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
-            next();
-          });
-        },
-      },
-    ],
+    plugins: [vitepressPythonEditor({ assetsDir: 'docs/.vitepress/dist/assets' })],
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -80,24 +44,3 @@ export default defineConfig({
     ]
   },
 })
-
-import { copyFile, mkdir } from 'fs/promises'
-
-// https://pyodide.org/en/latest/usage/working-with-bundlers.html#vite
-function pyodide() {
-  return {
-    name: 'pyodide',
-    generateBundle: async () => {
-      await mkdir('dist/assets', { recursive: true })
-      const files = [
-        'pyodide-lock.json',
-        'pyodide.asm.js',
-        'pyodide.asm.wasm',
-        'python_stdlib.zip'
-      ]
-      for (const file of files) {
-        await copyFile(`node_modules/pyodide/${file}`, `dist/assets/${file}`)
-      }
-    }
-  }
-}
