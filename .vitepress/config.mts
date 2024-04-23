@@ -6,7 +6,7 @@ export default defineConfig({
   title: "Learn CS",
   description: "A simple, straightforward presentation of computer science, fit for everyone.",
   vite: {
-    plugins: [vitepressPythonEditor({ assetsDir: 'docs/.vitepress/dist/assets' })],
+    plugins: [vitepressPythonEditor()],
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
