@@ -1,4 +1,4 @@
-## Libraries -- importing variables and functions ##
+# Libraries -- importing variables and functions #
 
 In the previous lesson, we covered how to define a variable and use it throughout the program. Now we will show you that you can update variables and how to do it.
 
