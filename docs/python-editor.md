@@ -4,7 +4,7 @@ import Editor from 'vitepress-python-editor'
 
 # Code Editor
 
-```python
+```python:line-numbers
 print('hello world')
 ```
 <Editor id="hello" />
