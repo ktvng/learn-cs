@@ -54,8 +54,19 @@ And this should print 13 as expected!
 ---
 
 ## Exercises ##
-1. create a variable named `age` and set it equal to your age, and print that value + 2 to the screen
+1. create a variable named `age` and set it equal to your age, and print that value + 2 to the screen.
+
+For example, if you are 18 years old, the output of your code should be:
+```py
+20
+```
 2. print a variable named `zero` that equals `0`
+
+The output of your code should be:
+```py
+0
+``` 
+
 Submit here: https://forms.gle/vryURyEUuCXra9jw6
 
 ## Recap ##
