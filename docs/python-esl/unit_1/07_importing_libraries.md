@@ -1,6 +1,5 @@
 ## Libraries -- importing variables and functions ##
 
-In the previous lesson, we covered how to define a variable and use it throughout the program. Now we will show you that you can update variables and how to do it.
 
 To begin this lesson, paste the following lines of code into the Python editor: 
 
@@ -56,5 +55,5 @@ The `math.fabs()` function takes in a single argument (`-4` in the example), and
 3. print out `math.e` and record the value of `e`
 
 ## Recap ##
-1. Variables and functions can be imported as libraries and leveraged to create your own programs
-2. Functions come in many forms, but all can be recognized with `(` `)`
+1. Variables and functions can be imported as libraries and leveraged to create your own programs. There are thousands of libraries all able to be imported similarly as shown in this lesson
+2. Function names follow the same constraints as variable names, but are followed with `(` `)`
