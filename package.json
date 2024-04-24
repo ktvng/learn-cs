@@ -1,20 +1,12 @@
 {
   "scripts": {
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs && node repack.mjs",
-    "docs:preview": "vitepress preview docs",
-    "repack": "node repack.mjs"
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "@types/node": "^20.12.7",
     "vitepress": "^1.0.1",
-    "@types/node": "^20.12.7"
-  },
-  "dependencies": {
-    "@codemirror/lang-python": "^6.1.5",
-    "codemirror": "^6.0.1",
-    "isomorphic-fetch": "^3.0.0",
-    "pyodide": "^0.25.1",
-    "vite": "^5.2.8",
-    "vue": "^3.4.21"
+    "vitepress-python-editor": "^1.0.2"
   }
 }

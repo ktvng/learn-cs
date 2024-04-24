@@ -1,7 +1,10 @@
 <script setup>
-import Editor from '/components/Editor.vue'
+import Editor from 'vitepress-python-editor'
 </script>
 
 # Code Editor
 
-<Editor code="print('hello world')"/>
+```python:line-numbers
+print('hello world')
+```
+<Editor id="hello" />
