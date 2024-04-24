@@ -7,6 +7,6 @@
   "devDependencies": {
     "@types/node": "^20.12.7",
     "vitepress": "^1.0.1",
-    "vitepress-python-editor": "^1.0.2"
+    "vitepress-python-editor": "^1.1.1"
   }
 }
