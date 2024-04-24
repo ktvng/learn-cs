@@ -5,6 +5,7 @@ import { vitepressPythonEditor } from 'vitepress-python-editor/vite-plugin'
 export default defineConfig({
   title: "Learn CS",
   description: "A simple, straightforward presentation of computer science, fit for everyone.",
+  srcExclude: ['README.md'],
   vite: {
     plugins: [vitepressPythonEditor()],
   },
