@@ -9,29 +9,39 @@ export default defineConfig({
   vite: {
     plugins: [vitepressPythonEditor()],
   },
-  // https://vitepress.dev/reference/default-theme-config
   themeConfig: {
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/ktvng/learn-cs' }
-    ],
+    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Editor', link: '/python-editor'},
-      { text: 'Unit 1', link: '/unit_1/index' }
+      { text: 'Unit 1', link: '/python-esl/unit_1/index' }
     ],
+
     sidebar: [
       {
         text: 'Unit 1',
         items: [
-          { text: 'Overview', link: '/unit_1/' },
-          { text: 'First Steps', link: '/unit_1/01_basic_printing' },
-          { text: 'Simple Math', link: '/unit_1/02_simple_math' },
-          { text: 'Names and Variables', link: '/unit_1/03_defining_number_variables' },
-          { text: 'Updating Variables', link: '/unit_1/04_changing_number_variables' },
-          { text: 'Equality', link: '/unit_1/04_equality' },
-          { text: 'Importing Libraries', link: '/unit_1/07_importing_libraries' },
+          { text: 'Overview', link: '/python-esl/unit_1/index' },
+          { text: 'First Steps', link: '/python-esl/unit_1/01_basic_printing' },
+          { text: 'Simple Math', link: '/python-esl/unit_1/02_simple_math' },
+          { text: 'Names and Variables', link: '/python-esl/unit_1/03_defining_number_variables' },
+          { text: 'Updating Variables', link: '/python-esl/unit_1/04_changing_number_variables' },
+          { text: 'Equality', link: '/python-esl/unit_1/04_equality' },
+          { text: 'Importing Libraries', link: '/python-esl/unit_1/07_importing_libraries' },
         ]
       },
+      // {
+      //   text: 'Unit 2',
+      //   items: [
+      //     { text: 'Overview', link: '/python-esl/unit_1/index' },
+
+
+      //   ]
+      // }
     ],
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/ktvng/learn-cs' }
+    ]
   },
 })

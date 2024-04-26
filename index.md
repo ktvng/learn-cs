@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Unit 1
-      link: /unit_1/
+      link: /python-esl/unit_1/index
 
 features:
   - title: ELL Focused
