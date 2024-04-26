@@ -6,6 +6,6 @@
   },
   "devDependencies": {
     "vitepress": "^1.0.1",
-    "vitepress-python-editor": "^1.0.2"
+    "vitepress-python-editor": "^1.2.0"
   }
 }
