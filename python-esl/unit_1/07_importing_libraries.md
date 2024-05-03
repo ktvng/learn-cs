@@ -1,4 +1,4 @@
-## Libraries -- importing variables and functions ##
+# Libraries -- importing variables and functions #
 
 
 To begin this lesson, paste the following lines of code into the Python editor: 
